@@ -1,0 +1,147 @@
+//* Arquitetura de Sistemas Avançado //*  
+
+*-- Conceitos de integração de sistemas e mensageria --*
+
+Qual pattern pode ser usado com essa arquitetura?
+R:Event source
+
+Qual a maior desvantagem de centralizar todas as mensagens em um único Message Broker?
+R:Ter dependência de um message broker em todos os serviços (Single point of failure).
+
+Dado que o Serviço A escreve mensagens que são consumidas pelo Serviço B, o que precisa ser feito para “aposentar” o Serviço B e colocar o Serviço C em seu lugar e continuar processando as mensagens do Serviço A?
+R:Desabilitar o Serviço B e fazer o Serviço C consumir mensagens da fila do Serviço A.
+
+Dado que o Serviço A escreve mensagens que são consumidas pelo Serviço B, o que precisa ser feito para “aposentar” o Serviço A e colocar o Serviço C em seu lugar e continuar produzindo as mensagens para o Serviço B?
+R:Desativar o Serviço A e habilitar o Serviço C para produzir mensagens na mesma fila que o Serviço A produzia.
+
+Qual a vantagem da comunicação assíncrona?
+R:Um serviço “quebrado” não interferir no outro.
+
+Quais são as principais vantagens da arquitetura em mensageria assíncrona?
+R:Desacoplamento e buffer de comunicação entre serviços.
+
+Qual possível problema pode se ter com arquitetura em mensageria assíncrona?
+R:Inconsistência de dados por não recebimento de mensagens.
+
+Como lidar com erros ao processar uma mensagem de forma assíncrona?
+R:O consumidor que sofrer o erro deve lidar com erro (ex. Dead Letter Queue).
+
+Como rastrear um fluxo em uma arquitetura de mensagens assíncronas?
+R:Usando um metadata nos logs e indexá-los em um único lugar.
+
+O que define uma arquitetura em mensageria?
+R:Serviços que produzem e consomem mensagens de um message broker.
+
+*-- Arquitetura de dados não estruturados e business intelligence --*
+
+Leia as sentenças sobre Big Data e assinale a alternativa correta.
+I - É um conjunto muito grande dados, estruturados ou não.
+II - Não há um banco de dados específico, mas sim uma composição de várias origens.
+III - Pode ser armazenado somente em banco de dados semi-estruturados..
+
+R:I e II estão corretas.
+
+Qual característica não é marcante em OLAP?
+R:Dados voláteis, passíveis de modificação.
+
+Dados semi-estruturados:
+I - Possuem uma estrutura de organização, mas é flexível.
+II - Não possuem estrutura alguma, admitindo qualquer tipo de informação.
+III - Podem também ser utilizados substituindo banco de dados estruturados.
+R:I e III estão corretas.
+
+Qual ou quais são ferramentas de Big Data?
+Hadoop.
+DataTorrent.
+Storm.
+Spark.
+R:Todas as alternativas são ferramentas de Big Data.
+
+Qual das alternativas é uma características de OLTP:
+R:Dados voláteis, passíveis de modificação e exclusão.
+
+Qual informação esta incorreta sobre BI?
+R:Considera apenas dados gerados pelos profissionais de BI.
+
+Quais são consideradas “dimensões” em DW?
+R:Tempo, Geografia e Membros.
+
+O que significa OLTP?
+R:On Line Transaction Processing.
+
+Quais das ferramentas abaixo são opções para Analytics em BI?
+Microsoft Power BI.
+Tableu.
+IBM Cognos Analytics.
+SAP Business Objects.
+R:Todas as alternativas estão corretas
+
+Qual das alternativas não é exemplo de um banco de dados NoSQL?
+R:ApacheDB.
+
+*-- Fundamentos de arquitetura de aplicações em nuvem --*
+
+Em caso de uma arquitetura não serverless, qual o melhor meio de obter alta disponibilidade em cloud?
+R:Utilizando um orquestrador de containers como Kubernetes.
+
+Qual das opções abaixo é um provedor de BaaS?
+R:Firebase.
+
+O que é IaaS?
+R:Infraestrutura como Serviço.
+
+O que é PaaS?
+R:Plataforma como Serviço.
+
+Qual das opções abaixo é uma ferramenta de receita provisionamento?
+R:Terraform.
+
+Qual das opções abaixo é um provedor de cloud computing?
+R:Amazon Web Services.
+
+O que é BaaS?
+R:Backend como Serviço.
+
+O que é Serverless?
+R:É um modelo de execução de computação em nuvem no qual o provedor de nuvem executa o servidor e gerencia dinamicamente a alocação de recursos da máquina.
+
+Em relação a disponibilidade de serviço, como o PaaS nos ajuda?
+R:Proporcionando um meio de escalar a infraestrutura de forma automatizada.
+
+O que é Cloud Computing?
+R:Solução de servidores servida por um provedor.
+
+*-- Desenvolvimento e operação de software integrado --*
+
+Complete: “ __________________ é uma métrica definida baseada no número de caminhos independentes possíveis em um código”.
+R:Complexidade Ciclomática.
+
+Os cincos pilares do acrônimo CALMS são:
+R:Cultura, automatização, enxuto, mensurável e compartilhamento
+
+Assinale a alternativa que melhor define inspeção contínua: 
+R:Coleta e análise de métricas de qualidade do software
+
+A Integração Contínua é uma responsabilidade principalmente da(s) área(s) de:
+R:Desenvolvimento e Operações.
+
+Marque a alternativa que melhor define se as afirmações abaixo são verdadeiras ou falsas:
+ I – Entrega Contínua não necessita de um aprovador para realizar o deploy. 
+ II – A construção e o teste unitário são componentes da Integração Contínua. 
+ III – Implantação Contínua prevê o deploy automático para um determinado ambiente. 
+ R: F - V - V
+
+Marque a única afirmativa incorreta: 
+R: O caminho “Aprendizado” permite que o desenvolvedor não tenha culpa de erros
+
+Qual afirmativa define melhor o conceito de DevOps?  
+R:É a colaboração entre as equipes, compartilhamento de conhecimento e  práticas que integram e automatizam processos
+
+Complete: “Além de gerar conhecimento, _________ criam previsibilidade sobre possíveis incidentes que possam vir a surgir”  
+R:Métricas.
+
+Marque a opção correta:
+R:CircleCI e AppVeyor são ferramentas de CI/CD.
+
+As principais etapas para a produção de software em conjunto entre desenvolvimento e operações são:  
+R:Planejamento, codificação, teste, release, deploy, operação e monitoramento.

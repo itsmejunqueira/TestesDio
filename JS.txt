@@ -1,0 +1,277 @@
+//* Js //*
+
+O que � o ECMAScript?
+ECMAScript � uma especifica��o de linguagem script criada pela Ecma International, utilizada por linguagens como: ActionScript, JScript e Javascript.
+Abaixo temos poss�veis fluxos de propostas para submeter uma proposta ao TC39. Qual alternativa abaixo cont�m o fluxo correto?
+R:Stage 0: strawman, Stage 1: proposal, Stage 2: draft, Stage 3: candidate e Stage 4: finished
+ 
+ O que � Hoisting e quais tipos existem?
+R: Hoisting ou i�amento � a capacidade do JavaScript elevar a cria��o de vari�veis e fun��es ao topo do escopo de suas cria��es. Existem dois tipos de Hoisting: hoisting de vari�vel e hoisting de fun��o.
+
+Qual � o nome do comit� respons�vel pela evolu��o do ECMAScript?
+R: TC39.
+ 
+ O JavaScript possui tipagem fraca e din�mica pois...
+1 - O tipo da vari�vel no JavaScript � definido no momento de sua atribui��o, esse processo se chama infer�ncia de tipo.
+2 - N�o � lan�ado um erro ou uma Exception durante a execu��o de:  1 + "texto".
+3 - Para mudarmos o tipo de uma vari�vel j� existente, basta setar um valor de outro tipo:
+Exemplo: 
+var teste = 1;
+teste = 'texto';
+4 - N�o � necess�rio explicitar o tipo na cria��o de uma vari�vel no JavaScript.
+ 
+R: Todas as afirmativas est�o corretas.
+
+
+Closure ou escopo l�xico � a capacidade da fun��o "lembrar" do seu contexto de cria��o.
+
+
+ Javascript � uma linguagem de fun��es de primeira classe e fun��es de ordem maior, pois...
+� poss�vel atribuir fun��es a vari�veis, retornar fun��es de outras fun��es e passar fun��es como par�metro para outras fun��es.
+  Observe os seguintes exemplos:
+const filmes = ['Meia-noite em Paris', 'Machete', 'Taxi Driver', 'Matrix']
+Assinale abaixo a estrutura de repeti��o correta que poderia listar os filmes da lista.
+R: for(let filme of filmes)
+
+
+"Science with religion is lame, religion without science is blind."
+I - O comando object.freeze n�o permite a cria��o, altera��o nem a remo��o de propriedades. 
+II - O comando object.seal n�o permite que a propriedade seja deletada nem criada.
+III - Para trocar o valor de uma propriedade que j� existe � usado o comando object.foo.
+Qual das alternativas abaixo est� correta?
+R: Apenas III est� errada.
+
+
+ Leia as senten�as e assinale a alternativa correta.
+I - Operadores un�rios de nega��o n�o retornam a nega��o do seu operando. 
+II - Operadores bin�rios retornam o resultado da divis�o de dois operandos.
+III - Operadores un�rios possuem apenas um operando, que podem vir antes ou depois do operador. 
+2 errada
+
+
+ O objetivo do Pattern Singleton �:
+R: Criar uma �nica inst�ncia de uma fun��o construtora e retorn�-la toda vez em que for necess�rio utiliz�-la.
+ 
+ 
+ //* JS Funções avançadas do ES6//* 
+ 
+ Quando podemos omitir os par�nteses de uma arrow function?
+R: Quando a fun��o recebe apenas um argumento, podemos omitir os par�nteses.
+
+O que � 'lazy evaluation'?
+R: A caracter�stica que permite podermos utilizar fun��es para definir valores de um argumento e a mesma s� ser� invocada quando o argumento for indefinido.
+
+Quando podemos omitir o valor de uma propriedade ou m�todo ao definir um objeto literal?
+R: Quando o valor vier de uma vari�vel com o mesmo nome da propriedade ou m�todo.
+
+Podemos referenciar outro argumento como valor padr�o para um argumento?
+R: Sim, mas apenas se o argumento vier anteriormente ao que est� sendo atribu�do.
+
+Qual a forma de atribuir um valor padr�o ao argumento de uma fun��o que surgiu com o ES6:
+R: Usando o caractere '=' seguido do valor que queremos atribuir ao argumento.
+
+Qual a forma de criar uma fun��o construtora com arrow functions?
+R: N�o podemos criar fun��es construtoras usando arrow functions.
+
+� poss�vel combinar default function arguments com destructuring?
+R: Sim, sempre que necess�rio podemos utilizar os dois, respeitando as regras de ambos.
+
+Spread operators podem ser utilizados onde?
+R: Em arrays, strings, na defini��o de objetos literais e objetos iter�veis.
+
+Qual a forma de aplicar o destructuring assignement em um array (arr), atribuindo o valor do seu primeiro �ndice para uma constante teste?
+R: const [ teste ] = arr;
+
+Ao utilizar o spread operator em uma string o seu retorno ser�:
+R: Uma lista contendo cada um dos caracteres da string.
+
+Ao construir um objeto literal a partir de outro, utilizando o spread operator, a ordem � importante pois:
+R:A ordem define quais valores das chaves com o mesmo nome ir�o prevalecer.
+
+Antes da exist�ncia do spread operator, qual era uma das formas utilizadas para enviar os items de lista como argumentos para uma fução?
+R: Utilizand o m�todo de fun��o apply.
+
+Quando o rest operator � utilizado nos argumentos de uma fun��o, al�m da lista de argumentos, ele tamb�m traz:
+R: Os m�todos e propriedades de array por ser uma inst�ncia de um array.
+
+Quais os tr�s estados poss�veis de uma Promise?
+R: Pending, fulfilled e rejected.
+ 
+Qual o objetivo do m�todo Promise.race?
+R:Criar uma Promise contendo diversas Promise e trazer o retorno da primeira que resolver entre elas.
+
+A palavra reservada await pode ser usada quando?
+R: Apenas dentro de uma fun��o criada utilizando a palavra async e para aguardar a resolu��o de uma promise.
+
+Uma requisi��o feita utilizando fetch s� ir� disparar um erro caso:
+R: Aconte�a um erro de rede e n�o seja poss�vel realizar a requisi��o.
+
+O m�todo de uma Promise utilizado para tratar seus erros
+R:m�todo .catch que ir� receber uma fun��o para o tratamento
+
+Objetivo do m�todo Promise.race
+R: Criar uma Promise contendo diversas Promise e trazer o retorno da primeira que resolver entr elas.
+
+Uma requisi��o feita utilizando fetch s� ir� disparar um erro caso
+R: Aconte�a um erro de rede e n�o seja poss�vel realizar a requisi��o.
+
+O retorno da invoca��o da fun��o fetch
+R: Uma Promise.
+
+Utilizar callbacks ao desenvolver JavaScript ass�ncrono pode trazer quais tipos de problemas quando n�o utilizado com cautela?
+R: Problemas com a legibilidade e manuten��o do c�digo, pois podemos cair no chamado "callback hell".
+
+A forma de processar m�ltiplas Promise de maneira paralela e tratar o retorno de todas posteriormente
+R:Utilizando o m�todo Promise.all.
+
+Os tr�s estados poss�veis de uma Promise
+R: Pending, fulfilled e rejected.
+
+Uma das formas de construir uma Promise no JavaScript
+R: Invocando o seu construtor e passando uma fun��o ao mesmo. Ex: new Promise((resolve, reject) => {}).
+
+Diferen�a entre o m�todo on e once de uma inst�ncia EventEmitter
+R: Um subscreve uma fun��o a todas as ocorr�ncias de um evento, o outro apenas para a primeira ocorr�ncia.
+
+A palavra reservada await pode ser usada quando
+R: Apenas dentro de uma fun��o criada utilizando a palavra async e para aguardar a resolu��o de uma promise.
+
+Qual a fun��o do m�todo spy do sinon?
+R: Criar uma fun��o ou interceptar a execu��o de uma outra fun��o a fim de obter dados sobre como a mesma foi invocada.
+
+Como aguardamos um c�digo ass�ncrono finalizar em um teste no mocha?
+R: Utilizando a fun��o done que vem como par�metro ao it posteriormente � execu��o do c�digo ass�ncrono.
+
+Os testes unit�rios s�o respons�veis por testar o qu�?
+R: A menor unidade do seu c�digo como fun��es, m�todos e afins.
+
+Caso não seja passada nenhuma configura��o de diret�rios ao mocha, qual ser� o diret�rio na raiz do projeto onde ser�o buscados os testes?
+test
+
+Quais sao as etapas que compoem o TDD?
+R: Escrita do teste descrevendo o comportamento esperado, escrita do c�digo com o comportamento esperado e refatora��o.
+
+Refatora��o do c�
+
+Qual � um dos principais objetivos do BDD (desenvolvimento orientado a comportamento)?
+R:Integrar regras de neg�cio com linguagens de programa��o.
+
+Qual a maior vantagem de utilizar o chai como ferramenta de asser��o?
+R:Ao escrever asser��es utilizando chai, uma das maiores vantagens � a sua escrita muito mais expressiva do comportamento esperado.
+
+Os testes funcionais visam:
+R: Garantir o correto funcionamento de uma funcionalidade de ponta a ponta.
+
+Qual o objetivo da aba styles dentro das ferramentas para desenvolvedor do navegador Chrome?
+R: Tem o objetivo de mostrar as regras de CSS aplicadas nos elementos, permitindo o debugging dos estilos.
+
+Qual o objetivo do m�todo console.error?
+R:Mostrar logs de erro no console do navegador.
+
+O que acontece no Chrome ao incluirmos a declara��o debugger dentro de um c�digo JavaScript?
+R:O c�digo ir� parar sua execu��o ao encontrar a declara��o, permitindo o debugging.
+
+Quais as vantagens de estender a classe de erro padr�o do JavaScript?
+R:A possibilidade de adicionar m�todos, propriedades e comportamentos ao erro.
+
+Qual a objetivo da declara��o finally ap�s os blocos de try e catch?
+R:Garantir e deixar expl�cito que um bloco de c�digo ser� executado em caso de erro ou n�o.
+
+Qual o objetivo da aba network dentro das ferramentas para desenvolvedor do Chrome?
+R:Trazer informa��es sobre as requisi��es executadas no navegador.
+
+Qual o objetivo da fun��o pretty print do navegador Chrome?
+R:Remover a minifica��o de um arquivo para possibilitar um debugging melhor.
+
+Qual o objetivo do m�todo console.assert?
+R:Exibir uma mensagem de erro no console caso a asser��o n�o passe.
+
+Qual o objetivo do m�todo console.time e console.timeEnd?
+R:Registrar um intervalo de tempo no console do navegador.
+
+Sobre XSD � correto afirmar:
+R:XSD � um schema XML usado para definir a estrutura de dados do SOAP Message.
+
+Assinale a afirma��o correta sobre REST:
+R:REST � uma arquitetura que define a implementa��o de um servi�o web.
+
+Sobre servi�os web, � correto afirmar que:
+R:Servi�os web facilitam integra��es e reutiliza��es de implementa��o.
+
+Dadas as afirma��es abaixo referente a c�digo de estado HTTP, assinale a alternativa correta: 
+I. 2xx - Indica que a requisi��o foi recebida com sucesso, mas nunca garante que foi processada com sucesso. 
+II. 3xx - Indica que a requisi��o foi processada com sucesso. 
+III. 4xx - Indica que n�o foi poss�vel processar a requisi��o por conta de uma 
+falha na mensagem enviado pelo cliente. 
+IV. 5xx - Indica que n�o foi poss�vel processar a requisi��o devido uma falha no servidor.
+R:  Somente alternativas III e IV est�o corretas.
+
+Qual a estrutura de um SOAP Message?  
+R:SOAP Envelope -> SOAP Header -> SOAP Body
+
+Dadas as afirma��es abaixo sobre servi�os web, selecione a alternativa correta: 
+I - Servi�os web possibilita a integra��o de aplica��es desenvolvidas com tecnologias diferentes. II - Servi�os web se comunicam atrav�s do protocolo HTTP. 
+III - Servi�os web suportam apenas XML para troca de mensagens. 
+ R: Somente alternativa I e II est�o corretas.
+
+Qual a utilidade dos m�todos HTTP na arquitetura REST? 
+R: REST utiliza os m�todos HTTP para representar a opera��o a ser realizada em um ?determinado recurso
+
+Sobre WSDL � correto afirmar: 
+R: WSDL � utilizado para descrever um servi�o web SOAP.
+
+Sobre o monolito, � incorreto afirmar: 
+R: Possui alta complexidade.
+
+Sobre aplica��es de microsservi�os, leia as senten�as e assinale a alternativa correta.
+I � Umas das vantagens de usar o microsservi�o � conseguir manter as aplica��es separadas.
+II � Apesar de estarem separados do sistema principal, as funcionalidades do microsservi�o possuem a mesma responsabilidade.
+III � Cada servi�o possui uma depend�ncia diferente.
+R:Apenas II est� errada.
+
+Qual a fun��o do Message Broker? 
+R: Permite identificar o motivo de um determinado servi�o ter sido incapaz de ?responder no momento de uma requisi��o
+
+No modelo de microsservi�os � poss�vel inserir um intermedi�rio entre as conex�es realizadas entre os servi�os, permitindo maior seguran�a e retorno de condi��es indevidas do sistema. 
+Tal mecanismo intermedi�rio � denominado:
+R:Message Broker.
+
+No modelo de Microsservi�os � poss�vel desenhar o Gerenciador de pipeline. 
+Sobre o Gerenciador de pipeline pode-se afirmar que: 
+R: O gerenciador de pipeline recebe a requisi��o do Proxy HTTP e conforme a etapa da?requisi��o envia para um servi�o espec�fico e independente
+
+Qual descri��o abaixo melhor representa o modelo de arquitetura de Monolito?
+R:Um navegador WEB faz uma requisi��o ao Proxy HTTP na qual chega at� uma determinada inst�ncia da aplica��o para retornar determinado dado.
+
+No modelo de Microsservi�os, na qual um Cluster � composto por Servi�os e um Proxy HTTP, � poss�vel afirmar que: 
+R: As aplica��es WEB que fazem requisi��es ao Proxy, o Proxy ir� verificar qual o ?servi�o respons�vel para executar aquela tarefa. Estes servi�os podem comunicar-s e entre si.
+
+O que s�o microsservi�os? 
+R: Microsservi�os desenvolvem sistemas mais flex�veis, escal�veis e com f�cil ?manuten��o comparado aos sistemas tradicionais
+
+Qual descri��o abaixo e justificativa melhor referem-se ao termo acoplamento.
+  R:Lida com a depend�ncia ou n�o de uma parte em rela��o a outra, portanto o modelo  ?de microsservi�os possui menor acoplamento se comparado ao monolito.
+
+A coleta de dados � obtida com ________ altera��es.
+Natureza Din�mica.
+
+_______ capacita IoT, reunindo objetos do cotidiano.
+Conectividade
+
+Observe a seguinte requisi��o: mqtt://broker/gary/pokemon/+ Qual o significado da linha acima?  
+R:Significa que do usu�rio Gary v�o ser coletados todos os dados dentro de pokemon
+
+Em qual desses lugares o IoT pode ser implementado? 
+R: 
+
+Sobre a composição dos t�picos, é inv�lida qual alternativa?  
+R: mqtt://car/velocity
+
+Quais s�o os conceitos b�sicos de IoT? 
+R: Coisas, nuvem e intelig�ncia
+
+Qual desafio surge quando usamos muitos dispositivos na mesma rede? 
+R: Consumo de energia
+
+
+ 

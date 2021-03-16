@@ -1,0 +1,201 @@
+ //*  Cores de feedback //*
+
+  São cores que possuem significados comuns entre as pessoas de uma determinada cultura.
+o peso de uma fonte � delimitado entre valores que variam entre _____ e _____, sendo que uma fonte com peso normal possui o valor _____.
+R: 100, 900, 400
+
+  Quais são as cores primarias da interface do usuario?
+R: Azul, laranja e cinza.
+
+   A prototipagem é parte inerente ao processo de desenvolvimento de um produto, também chamado de Design Thinking, possibilitando a demonstração do produto com algumas de suas características para obtenção de feedback dos usuários e  para validar ideias. 
+   <p> Sobre essa demonstração é possível classificar níveis de contextualidade da seguinte forma: Restrita: Em ambiente controlado; Geral: Qualquer usuário, qualquer ambiente; Parcial: Usuário final em ambiente controlado; Total: Usuário final em ambiente final. </p> 
+   <p> Com base no texto acima assinale a alternativa correta:</p>
+R: A descrição do nivel "Parcial" esta incorreta, sendo que o correto é "Usuario final ou ambiente final".
+
+   Abaixo seguem afirmações sobre fontes com e sem serifa, qual está correta?  
+R: Uma fonte sem serifa é a que não apresenta linhas extras no final das letras
+   
+
+<select onchange="mostrarPoderes(this)"><option value="Humano"></option><option value="Elfo"></option><option value="Orc"></option></select>
+ 
+  Assinale a alternativa que melhor define a diferen�a entre vari�vel global e local.
+R: A variavel local � declarada dentro de uma fun��o, enquanto a vari�vel global � declarada fora da fun��o e pode ser usada dentro da fun��o.
+ 
+ Se tratando de fun��es, assinale a alternativa errada:
+R:
+
+Assinale a alternativa que melhor define a ideia de par�metros de uma fun��o.
+R:
+
+Dia 1º de Abril é o Dia da Mentira. Imagine que hoje seja esse dia (ou por sorte seja mesmo), qual código abaixo retornaria uma string com o dia e o mês(numérico) corretamente no console?
+  R:  ** console.log("Hoje � " + d.getDate() + "/" + (d.getMonth()+1));
+
+
+//* Programação para internet com HTML5 e CSS3 //*
+
+Voc� precisa escrever o texto "Entre em contato" e esse texto precisa redirecionar para o e-mail da empresa, qual das alternativas abaixo apresenta a melhor solu��o?
+R: <p><a href="mailto:contato@empresa.com.br">Entre em contato</a></p>
+
+A tag <a> cont�m um atributo href que pode receber o valor do tipo string de um endere�o de email. 
+Se escrevermos o c�digo "<a href="mailto:1234567890">contato@empresa.com</a>" é esperado que:
+R: Abra o programa padr�o do sistema operacional para enviar um email para o endere�o 1234567890.
+
+Voc� precisa criar uma se��o de contato que contenha duas imagens nessa ordem: uma de telefone e outra de carta de correio. Sendo que respectivamente funcionem como um link para seus respectivos destinos. Sendo assim, avalie as op��es abaixo e assinale a alternativa que apresenta a ordem correta dos elementos.
+I - <img src="email
+II - </a>
+III - <a href="mailto:email@contato.com">
+IV - <img src="tel
+V - <a href="tel:123456">
+VI - .jpg">
+R: V, IV, VI, II, III, I, VI, II.
+
+Para escrever um link que redirecione para o email "contato@empresa.com.br", qual das alternativas abaixo funcionaria perfeitamente?
+R:<a href="mailto:contato@empresa.com.br">contato@empresa.com.br</a>
+
+Voc� precisa escrever uma se��o de contato que contenha, nessa ordem, o texto "Entre em contato" e uma imagem de uma carta de correio. Apenas a imagem pode conter o link. Avalie as op��es abaixo e assinale a alternativa que apresenta a ordem correta dos elementos:
+I - <img src="email.jpg">
+II - Entre em contato
+III - </a>
+IV - <a href="mailto:contato@empresa.com.br">
+V - </p>
+VI - <p>
+R: VI, II, V, IV, I, III.
+
+Voc� possui um site com links externos patrocinados. Quando o usu�rio clicar em algum deles dever� abrir uma nova aba, qual das alternativas abaixo apresenta a melhor solu��o?
+R: <p><a href="www.google.com.br" target="_blank">Google</a></p>
+
+Voc� precisa escrever uma se��o de contato que contenha, nessa ordem, a imagem de um telefone e o texto "Ligue agora!". Apenas o texto pode conter o link. Avalie as op��es abaixo e assinale a alternativa que apresenta a ordem correta dos elementos:
+I - <a href="tel:1234567890">
+II - </a>
+III - <p>Ligue agora!
+IV - <img src="telefone.png">
+V - </p>
+VI - <p>
+R: IV, I, III, V, II.
+
+Para escrever um link que redirecione para o telefone (12) 3456-7890, qual das alternativas abaixo funcionaria perfeitamente?
+R: <a href="tel:1234567890">(12) 3456-7890</a>
+
+Para escrever uma imagem contendo um link de email, avalie a ordem dos comandos abaixo e assinale a alternativa que apresenta a ordem correta de inserir os elementos HTML.
+I - <img src="email.jpg">
+II - <a href="mailto:contato@empresa.com">
+III - </img>
+IV - </a>
+V - <img src="email.png">
+R:II, I, IV.
+
+
+Avalie as op��es abaixo e assinale a alternativa que melhor representa a montagem de uma estrutura b�sica e abstrata de uma defini��o de estilo em CSS.
+I - elemento
+II - }
+III - {
+IV - :
+V - atributo
+VI - valor
+R: I, III, V, IV, VI, II.
+
+As cores de fundo podem ser configuradas por nomes em ingl�s das cores ou em escala HSL, que significa Hue, Saturation e Lightness. Considere que o Hue em 0 representa vermelho, 120 representa o verde e 240 � azul, portanto valores intermedi�rios entre 0 e 360 geram toda gama de cores. Satura��o � regulada de 0% a 100%, respectivamente representando camada cinza e cor total. Luz � regulada tamb�m em porcentagem, sendo 0% totalmente escuro (preto) e 100% totalmente claro (branco). 
+Sendo assim, se precisarmos de uma cor preta e uma cor azul pura, qual a alternativa que mostra ambas nessa sequ�ncia de forma correta?
+R: hsl(120, 100%, 0%); hsl(240, 100%, 50%)
+
+Considere os c�digos hexadecimais #ff0000, #00ff00 e #0000ff respectivamente como vermelho, verde e azul. Voc� precisa gerar 4 arquivos .css para 4 websites diferentes. Cada um deles com uma cor e um deles com fundo branco. Considere as op��es abaixo e assinale a alternativa correta.
+I - body{background:red}
+II - body{}
+III - body{background:white}
+IV - body{background:#00ff00}
+V - body{background:#0000ff}
+VI - body{background:#ff0000}
+R: I, II ou III, IV e V.
+
+Um coordenador de uma faculdade p�blica est� te contratando para montar uma galeria de realiza��es de uma famosa qu�mica chamada Rosalind Franklin. Voc� deve dividir as categorias em v�rus, DNA e RNA como t�tulos. Observe o seguinte c�digo:
+<h1 class="cientista">ROSALIND FRANKLIN</h1>
+<h1 class=�contribuicoes1�>Contribui��es sobre DNA</h1>
+<h1 class=�contribuicoes2�>Contribui��es sobre RNA</h1>
+<h1 class=�contribuicoes3�>Contribui��es sobre v�rus</h1>
+<h1 class="contribuicoes4">Outras contribui��es</h1>
+    Considerando que as descobertas teriam o mesmo estilo CSS, verifique as afirmativas abaixo de HTML que resolveriam essa situa��o.
+I - todas as classes das descobertas podem ter o mesmo valor, por exemplo, "contribuicoes" ao inv�s de "contribuicoes1", "contribuicoes2" e etc.
+II - inserir cada linha de c�digo da descoberta entre as tags <p> e </p>
+III - construir o mesmo estilo para cada classe associada, por exemplo contribuicao1{} contribuicao2{} e etc.
+IV - Se cada linha de contribui��o virar um hyperlink com a tag <a> o problema se resolve automaticamente.
+     Qual alternativa melhor explica as afirmativas acima?
+R: As afirmativas I e III est�o corretas apesar de serem solu��es diferentes.
+
+Ao listar uma das melhores m�sicas da banda Tears For Fears em HTML e CSS, examine o c�digo abaixo.
+HTML:
+<h1 class="banda">Tears For Fears</h1>
+<p class="musica">Head Over Heels
+Everybody Wants To Rule The World</p>
+<p musica>Shout</p>
+<p class="musica">Woman In Chains</p>
+
+CSS:
+p{font-size:30px}
+.musica{color:red}
+
+Avalie as afirmativas abaixo:
+I - O texto Head Over Heels estar� na mesma linha que o texto Everybody Wants To Rule The World.
+II - Todos os nomes de m�sicas estar�o com 30px e na cor vermelha.
+III - Apenas uma linha de texto com o nome da m�sica n�o estar� em vermelho.
+IV - O nome da banda apresentar� as propriedades normais da tag <h1>.
+V - Todos os nomes de m�sicas estar�o com 30px.
+
+Com base nas afirmativas acima assinale a alternativa correta abaixo:
+R: Est�o corretas apenas as afirmativas I, III, IV e V.
+
+Um m�dico entrou em contato com voc� porque ele precisa de sua ajuda para dividir as estruturas do corpo, portanto cada parte do corpo receber� uma tag <div>. Verifique abaixo o c�digo HTML que melhor divide o corpo, levando em conta as estruturas que s�o �nicas e as estruturas que s�o pares.
+Cabe�a, Bra�o esquerdo, Bra�o direito, T�rax, Abdome, Quadril, Perna esquerda, Perna direita.
+Considerando que o atributo "id" � usado para estruturas �nicas, ou seja, duas estruturas n�o podem ter o mesmo id, e "class" � usado para estruturas tamb�m �nicas, pares ou m�ltiplas, avalie as afirmativas abaixo:
+
+I - A cabe�a � escrita como <div id="cabeca">Cabe�a</div>
+II - Os bra�os ficariam <div class="braco">Bra�o esquerdo Bra�o direito</div>
+III - Cada bra�o com sua tag <div> mas com a mesma class chamada, por exemplo, "braco".
+IV - O quadril poderia receber tanto "id" quanto "class" para ser identificado.
+V - As pernas seguem o mesmo racioc�nio da afirmativa III.
+
+Assinale a alternativa correta:
+R: Est�o corretas apenas as alternativas I, III, IV e V.
+
+
+Voc� foi convocado para ajustar uma p�gina HTML da Whitney Houston e seus tr�s �ltimos �lbuns lan�ados. A foto dessa personalidade precisa estar em 400px e cada �lbum precisa estar em 200px com o nome do �lbum em destaque azul e a data de lan�amento em menor destaque e em preto.
+Confira o c�digo HTML abaixo:
+
+<img src="whitney_perfil.jpg" class="perfil">
+<img src="album1.jpg">
+<h1>Just Whitney</h1><h3>Lan�amento: 10/12/2002</h3>
+<img src="album2.jpg">
+<h1>One Wish: The Holiday Album</h1><h3>Lan�amento: 18/11/2003</h3>
+<img src="album3.jpg class="albums">
+<h1>I Look to You</h1><h3>Lan�amento: 28/08/2009</h3>
+
+Confira agora o CSS:
+perfil{width:400px}
+.img{width:200px}
+h1{color: blue}
+h3{color: black}
+
+Assinale qual das alternativas abaixo apresenta a situa��o que ir� resolver todo o c�digo:
+R:O c�digo est� incorreto, precisa associar classe �s imagens album1 e album2. Precisa corrigir perfil para .perfil e .img para .albums para corretamente associar o layout.
+
+
+Voc� precisa descobrir qual banda de rock fez a m�sica Bad To The Bone. Para isso voc� disp�e de um c�digo CSS que foi escrito para o HTML da banda. Com base no CSS, assinale a alternativa que melhor se relaciona com o c�digo HTML perfeitamente:
+CSS:
+#banda{font-size:40px; color:red}
+#musica{font-size:25px; color:blue}
+
+A alternativa correta � o HTML da alternativa:
+R: <h1 id="banda">George Thorogood & The Destroyers</h1><p id="musica">Bad To The Bone</p>
+
+Analise os comandos abaixo:
+I- git add
+II- git commit -m "Meu primeiro commit da minha primeira p�gina com html5 e css3"
+III- git push origin master.
+
+Assinale a alternativa que explique cada um dos comandos:
+R:I- Adicionou todos os arquivos alterados. II- Salvou as altera��es. III- Subiu as altera��es para o reposit�rio remoto.
+
+
+O CSS permite dividir os elementos de forma praticamente infinita quando se aprende a usar as ids e classes para customizar um determinado elemento. Isso agiliza a produ��o devido � padroniza��o do layout. Sendo assim, identifique abaixo os �cones que, respectivamente, relacionam-se a referenciar um elemento por id e outro por classe:
+R: # e . 
+
+

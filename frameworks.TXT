@@ -1,0 +1,25 @@
+//* Bootstrap //*
+
+O que � utilizado para definir um link que leva a uma se��o dentro da p�gina?
+R: Dentro do href da tag <a> utiliza-se uma # seguida do id da se��o.
+
+ Qual classe de bot�o � usada para criar um bot�o grande?
+R: .btn-lg
+
+ Para qual finalidade foi utilizado o comando git add .?
+R: Para adicionar todos os arquivos modificados ao commit.
+
+//* Introdução ao SCRUM //*
+
+Se tratando de um time Scrum, qual das alternativas abaixo est� errada?
+As tarefas s�o coletivas e apenas o PO � o respons�vel por elas.
+
+O que � Scrum?
+Scrum � uma metodologia �gil que auxilia no desenvolvimento de projetos.
+
+Resultado de imagem para Quais s�o os tr�s pilares do Scrum?
+Os tr�s pilares do Scrum s�o a transpar�ncia, inspe��o e adapta��o
+
+
+Assinale a op��o correta a respeito do Scrum:
+A t�cnica SMART do Scrum pode ser utilizada para a identifica��o dos objetivos de um projeto.
